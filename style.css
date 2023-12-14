@@ -1,0 +1,465 @@
+/* Remember toset deafault styles for consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation styles */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    color: white;
+    padding: 10px 20px; /* Increase padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /
+}
+
+.logo {
+    max-width: 100px; /* fix logo problem */
+}
+
+.main-menu, .right-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li, .right-menu li {
+    margin: 0 15px;
+}
+
+.main-menu a, .right-menu a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+/* Hover effect */
+.main-menu a:hover, .right-menu a:hover {
+    color: #ffc107; /* Set your hover color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-menu, .right-menu {
+        margin-top: 10px;
+        text-align: center; /* Center text in smaller screens */
+    }
+
+    .main-menu li, .right-menu li {
+        margin: 10px 0; /* Adjust margin for better spacing in smaller screens */
+    }
+
+    .logo {
+        max-width: 80px; /* Set max-width for the logo in smaller screens */
+    }
+}
+
+/* Header styles */
+.top {
+    text-align: center;
+    padding: 30px 20px; /* Adjusted padding */
+    background-size: auto 100%;
+    background-position: center;
+    background-image: url('img/blue.jpg'); /* Replace with the correct image path */
+    color: white;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.recipe-intro div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.recipe-intro img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* look into this*/
+}
+
+
+/* About Me styles */
+/* About Me styles */
+.about-me {
+    text-align: left; /* Align text to the left */
+    padding: 50px 0;
+    background-color:#f8f8f8;
+    color: black;
+}
+
+.about-me .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.about-me img {
+    max-width: 600px; 
+    height: auto;
+    margin-right: 100px; 
+}
+
+.about-me p {
+    max-width: 600px; /* Set the maximum width for the text */
+    
+}
+
+
+/* recpe Cards styles */
+.recipe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.recipe-cards div {
+    width: 48%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.recipe-cards img {
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.recipe h3{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/* Contact Me - Subscribe styles */
+.contact-me {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    color: black;
+}
+
+.contact-me .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: hsl(0, 29%, 87%);
+}
+
+
+/* Follow styles */
+.follow {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: white;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .recipe-intro div, .home-cards div {
+        width: 100%;
+    }
+}
+/* Carbon Dark styles */
+.carbon-dark {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #222;
+    color: white;
+}
+
+/* Follow styles */
+.follow {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: white;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .recipe-intro div, .home-cards div {
+        width: 100%;
+    }
+}
+
+/* Additional styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Font Awesome styles */
+.fas {
+    margin-right: 5px;
+}
+
+/* Add  specific image paths */
+.logo,
+.recipe-intro img,
+.about-me img,
+.home-cards img,
+.carbon-dark img {
+    max-width: 100%;
+    height: auto;
+}
+/* sub styles */
+.subscribe {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #222;
+    color: white;
+}
+
+/* Follow styles */
+.follow {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444;
+    color: white;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    margin: 0 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .recipe-intro div, .home-cards div {
+        width: 100%;
+    }
+
+    .recipe-intro h3,
+    .home-cards h3 {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+
+    .about-me img {
+        max-width: 200px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer li {
+        margin: 10px 0;
+    }
+}
+
+/* Additional styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Font Awesome styles */
+.fas {
+    margin-right: 5px;
+}
+
+/* Add your specific image paths */
+.logo,
+.recipe-intro img,
+.about-me img,
+.home-cards img,
+.carbon-dark img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional styles for specific sections */
+.recipe-intro h3,
+.home-cards h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.about-me img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 480px) {
+    .recipe-intro div, .home-cards div {
+        width: 100%;
+    }
+
+    .recipe-intro h3,
+    .home-cards h3 {
+        font-size: 1.2em;
+    }
+
+    .about-me img {
+        max-width: 150px;
+    }
+}
+
